@@ -28,6 +28,5 @@ android {
 dependencies {
     compileOnly rootProject.ext.dependencies["appcompat-v7"]
     compileOnly rootProject.ext.dependencies["recyclerview-v7"]
-    //日志(https://github.com/elvishew/xLog)
     compileOnly 'com.elvishew:xlog:1.6.1'
 }
