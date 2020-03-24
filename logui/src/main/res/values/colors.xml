@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="logui_colorPrimary">#3D8CFF</color>
+    <color name="logui_colorPrimaryDark">#3D8CFF</color>
+    <color name="logui_colorAccent">#3D8CFF</color>
+
+    <color name="logui_bg">#F5F5F5</color>
+    <color name="logui_divider">#E2E2E2</color>
+    <color name="logui_press">#d7d5d5</color>
+
+    <color name="logui_text1">#1A1A1A</color>
+    <color name="logui_text2">#888888</color>
+</resources>

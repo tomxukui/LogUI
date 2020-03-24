@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/logui_bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/logui_colorPrimary"
+        android:theme="@style/LogUI_AppTheme.AppBarOverlay"
+        app:popupTheme="@style/LogUI_AppTheme.PopupOverlay" />
+
+    <!--筛选栏-->
+    <LinearLayout
+        android:id="@+id/linear_levels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/logui_colorPrimary"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="级别"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_levels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/logui_colorPrimary"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tag"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

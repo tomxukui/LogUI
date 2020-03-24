@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="LogUI_AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/logui_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/logui_colorPrimaryDark</item>
+        <item name="colorAccent">@color/logui_colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="LogUI_AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@drawable/logui_cursor</item>
+    </style>
+
+    <style name="LogUI_AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LogUI_CheckBox_White" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+    </style>
+
+</resources>

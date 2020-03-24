@@ -1,0 +1,3 @@
+rootProject.name='LogUI'
+include ':app'
+include ':logui'

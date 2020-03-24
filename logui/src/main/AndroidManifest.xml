@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xukui.library.logui">
+
+    <application>
+
+        <activity
+            android:name=".ui.LogsActivity"
+            android:screenOrientation="behind"
+            android:theme="@style/LogUI_AppTheme" />
+
+        <activity
+            android:name=".ui.LogActivity"
+            android:screenOrientation="behind"
+            android:theme="@style/LogUI_AppTheme" />
+
+    </application>
+
+    <!--文件读写权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>
+
+
