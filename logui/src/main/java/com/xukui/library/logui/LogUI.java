@@ -87,6 +87,20 @@ public class LogUI {
     }
 
     /**
+     * JSON输出(蓝色)
+     */
+    public static void json(String tag, String json) {
+        XLog.tag(tag).json(json);
+    }
+
+    /**
+     * XML输出(蓝色)
+     */
+    public static void xml(String tag, String xml) {
+        XLog.tag(tag).xml(xml);
+    }
+
+    /**
      * 根据等级获取Tag颜色
      */
     public static int getTagColor(int level) {

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                LogUI.d("ddd", System.currentTimeMillis() + "");
+                LogUI.json("ddd", "{\"app\":\"demo\"}");
             }
 
         });
